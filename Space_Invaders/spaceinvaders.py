@@ -304,7 +304,7 @@ class SpaceInvaders(object):
 
 	def frame_step(self, input_actions):
 		event.pump()
-		reward = 0.1
+		reward = 0
 		terminal = False
 		
 		if self.mainScreen:
@@ -369,7 +369,7 @@ class SpaceInvaders(object):
 					self.allSprites.add(self.bullets)
 #					reward = 0.4
 		if ((input_actions[1] == 1) or (input_actions[2] == 1)):
-#			reward = 0.1
+			reward = 0.1
 			self.player.update(input_actions)
 #			if input_actions[1] == 1 and self.rect.x > 10:
 #				self.rect.x -= self.speed
@@ -581,7 +581,7 @@ class SpaceInvaders(object):
 		if enemiesdict:
 			for value in enemiesdict.values():
 				for currentSprite in value:
-					reward = 1
+					reward = 1.0
 #					self.sounds["invaderkilled"].play()
 					self.killedRow = currentSprite.row
 					self.killedColumn = currentSprite.column
@@ -597,7 +597,7 @@ class SpaceInvaders(object):
 		if mysterydict:
 			for value in mysterydict.values():
 				for currentSprite in value:
-					reward = 1
+					reward = 1.0
 #					currentSprite.mysteryEntered.stop()
 #					self.sounds["mysterykilled"].play()
 					score = self.calculate_score(currentSprite.row)
