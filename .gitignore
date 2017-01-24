@@ -71,5 +71,6 @@
 # Python artifacts
 *.pyc
 
+*.*~
 # XCode Artifacts
 */*.xcworkspace/*

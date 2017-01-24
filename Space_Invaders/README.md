@@ -4,6 +4,7 @@ Space Invaders
 
 About
 -----
+<img src="./images/network.png">
 
 [DQN for space invaders](https://www.youtube.com/watch?v=uPUkDQnqzR4&feature=youtu.be)
 
@@ -19,6 +20,5 @@ About
 cd Space_Invaders
 python2 deep_q_network.py
 
-Video: https://www.youtube.com/watch?v=uPUkDQnqzR4&feature=youtu.be
 
 This project has been taken from the: https://github.com/leerob/Space_Invaders
